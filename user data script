@@ -1,0 +1,11 @@
+#!/bin/bash
+# Update all packages
+apt-get update -y
+apt-get upgrade -y
+
+# Install Apache2
+apt-get install -y apache2
+
+# Enable and start Apache service
+systemctl enable apache2
+systemctl start apache2
